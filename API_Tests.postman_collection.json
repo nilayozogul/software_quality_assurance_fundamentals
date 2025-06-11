@@ -1,0 +1,659 @@
+{
+	"info": {
+		"_postman_id": "bc69dbdb-1ed8-47cd-9352-ceffae1ebc31",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44813978"
+	},
+	"item": [
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=0cafdadef0eff3ba08abe8b0c3608581",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=0cafdadef0eff3ba08abe8b0c3608581",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "London"
+						},
+						{
+							"key": "appid",
+							"value": "0cafdadef0eff3ba08abe8b0c3608581"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=0cafdadef0eff3ba08abe8b0c3608581",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=0cafdadef0eff3ba08abe8b0c3608581",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "London"
+						},
+						{
+							"key": "appid",
+							"value": "0cafdadef0eff3ba08abe8b0c3608581"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=0cafdadef0eff3ba08abe8b0c3608581",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"London hava durumu bilgileri\", function() {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.name).to.eql(\"London\");\r",
+							"    pm.expect(jsonData.main.temp).to.be.a('number');\r",
+							"    pm.expect(jsonData.cod).to.eql(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=0cafdadef0eff3ba08abe8b0c3608581",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "London"
+						},
+						{
+							"key": "appid",
+							"value": "0cafdadef0eff3ba08abe8b0c3608581"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=0cafdadef0eff3ba08abe8b0c3608581",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=0cafdadef0eff3ba08abe8b0c3608581",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "London"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "appid",
+							"value": "0cafdadef0eff3ba08abe8b0c3608581"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&lang=tr&appid=0cafdadef0eff3ba08abe8b0c3608581",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&lang=tr&appid=0cafdadef0eff3ba08abe8b0c3608581",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "London"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "lang",
+							"value": "tr"
+						},
+						{
+							"key": "appid",
+							"value": "0cafdadef0eff3ba08abe8b0c3608581"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?q=xyzabc&appid=0cafdadef0eff3ba08abe8b0c3608581",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=xyzabc&appid=0cafdadef0eff3ba08abe8b0c3608581",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "xyzabc"
+						},
+						{
+							"key": "appid",
+							"value": "0cafdadef0eff3ba08abe8b0c3608581"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?q=London",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=London",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "London"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=0cafdadef0eff3ba08abe8b0c3608581",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var json = pm.response.json();\r",
+							"pm.test('Temp float mı?', function () {\r",
+							"  pm.expect(typeof json.main.temp).to.eql('number');\r",
+							"});\r",
+							"pm.test('Açıklama metin mi?', function () {\r",
+							"  pm.expect(typeof json.weather[0].description).to.eql('string');\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=0cafdadef0eff3ba08abe8b0c3608581",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "London"
+						},
+						{
+							"key": "appid",
+							"value": "0cafdadef0eff3ba08abe8b0c3608581"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?q=&appid=0cafdadef0eff3ba08abe8b0c3608581",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=&appid=0cafdadef0eff3ba08abe8b0c3608581",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": ""
+						},
+						{
+							"key": "appid",
+							"value": "0cafdadef0eff3ba08abe8b0c3608581"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?q={şehir}&appid=0cafdadef0eff3ba08abe8b0c3608581",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q={şehir}&appid=0cafdadef0eff3ba08abe8b0c3608581",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{şehir}"
+						},
+						{
+							"key": "appid",
+							"value": "0cafdadef0eff3ba08abe8b0c3608581"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=11111111111111111111",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=11111111111111111111",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "London"
+						},
+						{
+							"key": "appid",
+							"value": "11111111111111111111"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?q=<script>alert('xss')</script>&appid=0cafdadef0eff3ba08abe8b0c3608581",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=<script>alert('xss')</script>&appid=0cafdadef0eff3ba08abe8b0c3608581",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "<script>alert('xss')</script>"
+						},
+						{
+							"key": "appid",
+							"value": "0cafdadef0eff3ba08abe8b0c3608581"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=0cafdadef0eff3ba08abe8b0c3608581&units=metric",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response time is acceptable\", function() {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500); \r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=0cafdadef0eff3ba08abe8b0c3608581&units=metric",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "London"
+						},
+						{
+							"key": "appid",
+							"value": "0cafdadef0eff3ba08abe8b0c3608581"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?q=Istanbul&appid=0cafdadef0eff3ba08abe8b0c3608581",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=Istanbul&appid=0cafdadef0eff3ba08abe8b0c3608581",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Istanbul"
+						},
+						{
+							"key": "appid",
+							"value": "0cafdadef0eff3ba08abe8b0c3608581"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?q=UnknownCity&appid=0cafdadef0eff3ba08abe8b0c3608581",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=UnknownCity&appid=0cafdadef0eff3ba08abe8b0c3608581",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "UnknownCity"
+						},
+						{
+							"key": "appid",
+							"value": "0cafdadef0eff3ba08abe8b0c3608581"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?lat=41.0082&lon=28.9784&appid=0cafdadef0eff3ba08abe8b0c3608581",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?lat=41.0082&lon=28.9784&appid=0cafdadef0eff3ba08abe8b0c3608581",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "41.0082"
+						},
+						{
+							"key": "lon",
+							"value": "28.9784"
+						},
+						{
+							"key": "appid",
+							"value": "0cafdadef0eff3ba08abe8b0c3608581"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/forecast?q=Istanbul&appid=0cafdadef0eff3ba08abe8b0c3608581",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200); });\r",
+							"pm.test(\"Response format is JSON\", function () {\r",
+							"    pm.response.to.be.withBody;\r",
+							"    pm.response.to.be.json; });\r",
+							"pm.test(\"City name is Istanbul\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.city.name).to.eql(\"Istanbul\"); });\r",
+							"pm.test(\"Forecast list exists\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.list).to.be.an(\"array\");\r",
+							"    pm.expect(jsonData.list.length).to.be.greaterThan(0); });\r",
+							"pm.test(\"Each forecast item contains main and weather data\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    jsonData.list.forEach(function(item) {\r",
+							"        pm.expect(item).to.have.property(\"main\");\r",
+							"        pm.expect(item).to.have.property(\"weather\");\r",
+							"    }); });"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/forecast?q=Istanbul&appid=0cafdadef0eff3ba08abe8b0c3608581",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Istanbul"
+						},
+						{
+							"key": "appid",
+							"value": "0cafdadef0eff3ba08abe8b0c3608581"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
